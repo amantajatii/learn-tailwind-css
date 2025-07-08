@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Amantajatii's Portofolio</title>
+        <title>Amantajatii's Portofolio Website</title>
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -13,47 +13,51 @@
         </style>
 
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
     </head>
 
     <body class="bg-zinc-900">
         <!-- start of nav-bar -->
         <header class="mb-20">
-            <nav class="fixed top-0 w-screen z-50">
+            <nav class="fixed top-0 w-screen z-50 shadow-lg">
                 <div
                     class="flex items-center justify-between py-7 p-4 bg-zinc-800/30 backdrop-blur-sm text-white"
                 >
                     <div
-                        class="flex-grow border-b-2 border-solid border-purple-600 mr-8"
+                        class="flex-grow border-b-2 border-solid border-blue-600 mr-8"
                     ></div>
-                    <div class="flex space-x-16">
+                    <div class="flex space-x-16 font-semibold">
                         <a
                             href="#"
-                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-purple-400 cursor-pointer"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
                             >Home</a
                         >
                         <a
                             href="#about"
-                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-purple-400 cursor-pointer"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
                             >About Me</a
                         >
                         <a
                             href="#my-journey"
-                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-purple-400 cursor-pointer"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
                             >My Journey</a
                         >
                         <a
-                            href="#"
-                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-purple-400 cursor-pointer"
+                            href="#project"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
                             >Project</a
                         >
                         <a
-                            href="#"
-                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-purple-400 cursor-pointer"
-                            >Contact</a
+                            href="#social-media"
+                            class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                            >Social Media</a
                         >
                     </div>
                     <div
-                        class="flex-grow border-b-2 border-purple-600 ml-8"
+                        class="flex-grow border-b-2 border-blue-600 ml-8"
                     ></div>
                 </div>
             </nav>
@@ -62,16 +66,19 @@
 
         <!-- main content -->
         <div class="w-screen h-auto overflow-hidden -mt-12">
-            <div id="home" class="bg-zinc-800/80 rounded-b-full -mx-50">
+            <div
+                id="home"
+                class="bg-gradient-to-b from-zinc-900 to-blue-950/50 rounded-b-full -mx-50"
+            >
                 <div
                     class="py-55 mx-60 block md:flex items-center justify-evenly"
                 >
                     <div class="text-white space-y-4">
                         <h2 class="text-5xl font-medium">Hi, I'm</h2>
-                        <h1 class="text-6xl text-purple-400 font-semibold">
+                        <h1 class="text-6xl text-blue-400 font-semibold">
                             Diaz Amantajati
                         </h1>
-                        <p class="text-zinc-300">
+                        <p class="text-zinc-200">
                             I'm an undergraduate Information Engineering student
                             at Gadjah Mada University.
                         </p>
@@ -85,44 +92,48 @@
             </div>
         </div>
         <!-- about me -->
-        <div id="about" class="pb-24">
-            <div class="flex pt-20 px-30">
-                <div
-                    class="md:w-4/12 pt-24 flex justify-center md:justify-start"
-                >
-                    <h1 class="text-5xl font-bold text-purple-400 inline-block">
-                        ABOUT ME
-                    </h1>
+        <section id="about">
+            <div class="pb-24 bg-gradient-to-b from-zinc-900 to-zinc-950">
+                <div class="flex px-30">
+                    <div
+                        class="md:w-4/12 pt-24 flex justify-center md:justify-start"
+                    >
+                        <h1
+                            class="text-5xl font-bold text-white inline-block"
+                        >
+                            ABOUT ME
+                        </h1>
+                    </div>
                 </div>
-                <div
-                    class="hidden flex-grow md:block w-screen border-b-2 border-purple-600 my-10 ml-20"
-                ></div>
+                <div class="w-full md:w-8/12 block px-10 md:px-30 pt-10">
+                    <p class="text-zinc-200 text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Impedit soluta vero asperiores iste possimus quasi illo
+                        et? Modi, a explicabo omnis unde facilis fuga. Eos,
+                        obcaecati excepturi? Fugiat animi eum quod nostrum. Non
+                        fuga repellendus veritatis, laudantium quaerat
+                        accusantium labore. Quis dicta debitis odit deserunt.
+                        Aut quos libero aspernatur debitis?
+                    </p>
+                </div>
             </div>
-            <div class="w-full md:w-8/12 block px-10 md:px-30 pt-10">
-                <p class="text-zinc-200 text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit soluta vero asperiores iste possimus quasi illo et?
-                    Modi, a explicabo omnis unde facilis fuga. Eos, obcaecati
-                    excepturi? Fugiat animi eum quod nostrum. Non fuga
-                    repellendus veritatis, laudantium quaerat accusantium
-                    labore. Quis dicta debitis odit deserunt. Aut quos libero
-                    aspernatur debitis?
-                </p>
-            </div>
-        </div>
+        </section>
         <!-- end of about me -->
 
-        <section id="my-journey" class="py-24 px-4 bg-zinc-900 text-white">
+        <section
+            id="my-journey"
+            class="pt-24 px-4 bg-gradient-to-b from-zinc-950 to-zinc-900 text-white"
+        >
             <div class="container mx-auto">
                 <h2
-                    class="text-4xl font-bold text-center mb-10 text-purple-400"
+                    class="text-5xl font-bold text-center mb-10 text-white"
                 >
                     MY JOURNEY
                 </h2>
 
                 <div class="relative wrap overflow-hidden p-10 h-full">
                     <div
-                        class="border-2-2 absolute border-opacity-20 border-purple-700 h-full border"
+                        class="border-2-2 absolute border-opacity-20 border-blue-700 h-full border"
                         style="left: 50%"
                     ></div>
 
@@ -131,12 +142,12 @@
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 School
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
@@ -157,12 +168,12 @@
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Media
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
@@ -184,12 +195,12 @@
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Illustration and Layout
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
@@ -212,12 +223,12 @@
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Media Creative
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
@@ -226,7 +237,10 @@
                             <p
                                 class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100"
                             >
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ipsam expedita a nisi laboriosam tenetur facere atque laborum quas quam.
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quod ipsam expedita a nisi
+                                laboriosam tenetur facere atque laborum quas
+                                quam.
                             </p>
                             <p class="text-xs text-gray-400 mt-2">2023</p>
                         </div>
@@ -236,12 +250,12 @@
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of DDD
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
@@ -263,12 +277,12 @@
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Design
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
@@ -277,75 +291,27 @@
                             <p
                                 class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100"
                             >
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ipsam expedita a nisi laboriosam tenetur facere atque laborum quas quam.
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quod ipsam expedita a nisi
+                                laboriosam tenetur facere atque laborum quas
+                                quam.
                             </p>
                             <p class="text-xs text-gray-400 mt-2">2024</p>
                         </div>
                     </div>
-                    <div
-                        class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
-                    >
-                        <div class="order-1 w-5/12"></div>
-                        <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
-                        ></div>
-                        <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
-                        >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
-                                Logic Test Participant
-                            </h3>
-                            <h4 class="mb-2 font-bold text-lg">
-                                Samsung Innovation Campus Batch 6
-                            </h4>
-                            <p
-                                class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100"
-                            >
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Consequuntur perferendis
-                                exercitationem dignissimos, eveniet fugiat
-                                minus!
-                            </p>
-                            <p class="text-xs text-gray-400 mt-2">2024-2025</p>
-                        </div>
-                    </div>
 
                     <div
-                        class="mb-8 flex justify-between items-center w-full right-timeline"
-                    >
-                        <div class="order-1 w-5/12"></div>
-                        <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
-                        ></div>
-                        <div
-                            class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
-                        >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
-                                Stage 1 Participant
-                            </h3>
-                            <h4 class="mb-2 font-bold text-lg">
-                                Samsung Innovation Campus Batch 6
-                            </h4>
-                            <p
-                                class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100"
-                            >
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ipsam expedita a nisi laboriosam tenetur facere atque laborum quas quam.
-                            </p>
-                            <p class="text-xs text-gray-400 mt-2">2025</p>
-                        </div>
-                    </div>
-                    <div
                         class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
-                                Stage 2 Participant
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
+                                Stage 0 (Logic Test) - Stage 2 Participant
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
                                 Samsung Innovation Campus Batch 6
@@ -367,12 +333,12 @@
                     >
                         <div class="order-1 w-5/12"></div>
                         <div
-                            class="z-20 flex items-center order-1 bg-purple-700 shadow-xl w-10 h-10 rounded-full"
+                            class="z-20 flex items-center order-1 bg-blue-700 shadow-xl w-10 h-10 rounded-full"
                         ></div>
                         <div
                             class="order-1 bg-zinc-800 rounded-lg shadow-xl w-5/12 px-6 py-4"
                         >
-                            <h3 class="mb-3 font-bold text-purple-400 text-xl">
+                            <h3 class="mb-3 font-bold text-blue-400 text-xl">
                                 Staff of Documentation
                             </h3>
                             <h4 class="mb-2 font-bold text-lg">
@@ -381,11 +347,78 @@
                             <p
                                 class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100"
                             >
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ipsam expedita a nisi laboriosam tenetur facere atque laborum quas quam.
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quod ipsam expedita a nisi
+                                laboriosam tenetur facere atque laborum quas
+                                quam.
                             </p>
                             <p class="text-xs text-gray-400 mt-2">2025</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="mt-12 pt-24">
+            <div >
+                <h2 class="text-4xl font-bold text-center mb-10 text-white">
+                    PROJECT
+                </h2>
+            </div>
+            <div class="flex justify-center">
+                <div
+                    class="w-10/12 md:w-3/12 h-full text-white bg-blue-900 rounded-xl shadow-inner"
+                >
+                    <div
+                        class="w-full rounded-md aspect-video bg-[url(./images/this-website.png)] bg-cover bg-center"
+                    ></div>
+                    <div class="py-5 px-7">
+                        <h1 class="text-2xl font-semibold text-blue-100 mb-2">
+                            This Website
+                        </h1>
+                        <p class="text-sm text-zinc-300 text-justify mb-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Accusantium doloribus tempora veritatis optio
+                            possimus consequuntur quidem voluptas iure mollitia
+                            odio, eos nemo, tenetur reprehenderit dolorem?
+                        </p>
+                        <p class="text-sm font-medium text-blue-400">2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-media" class="pb-32 bg-gradient-to-b from-zinc-900/70 to-blue-900/60">
+            <div class="mt-20">
+                <div>
+                    <h1
+                        class="text-4xl font-bold text-center mb-10 text-white"
+                    >
+                        SOCIAL MEDIA
+                    </h1>
+                </div>
+                <div class="social-icons p-8 text-center">
+                    <a
+                        href="#"
+                        title="twitter"
+                        class="inline-block text-white text-6xl mx-[5px] no-underline group transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                    >
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a
+                        href="#"
+                        title="instagram"
+                        class="inline-block text-white text-6xl mx-[5px] no-underline group transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                    >
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a
+                        href="#"
+                        title="linkedin"
+                        class="inline-block text-white text-6xl mx-[5px] no-underline group transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-blue-400 cursor-pointer"
+                    >
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </section>
