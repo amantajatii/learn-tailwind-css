@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start of nav-bar -->
+    <div
+      class="flex p-4 px-8 bg-cyan-900/90 m-2 rounded-lg content-center shadow-lg fixed w-full"
+    >
+      <div class="w-4/12 content-center">
+        <h1 class="text-2xl text-white">Diaz</h1>
+      </div>
+      <div class="w-8/12 text-right text-white content-center">
+        <span class="sm:hidden text-2xl"> &#9776; </span>
+        <div class="space-x-5 hidden sm:block text-md">
+          <a href="" class="">Home</a>
+          <a href="">About</a>
+          <a href="">Prestasi</a>
+          <a href="">Social</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of nav-bar -->
+
+    <div
+      class="w-screen h-screen flex justify-center items-center bg-black dark:bg-white"
+    >
+      <h1
+        class="relative w-full xl:text-9xl md:text-8xl text-5xl sm:tracking-[17px] tracking-[10px] uppercase text-center leading-[0.70em] outline-none animate-dimlight box-reflect"
+      >
+        Diaz Amantajati
+      </h1>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            keyframes: {
+              dimlight: {
+                "0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%": {
+                  color: "#0e3742",
+                  boxShadow: "none",
+                },
+                "18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%": {
+                  color: "#fff",
+                  textShadow: "0 0 10px #03bcf4",
+                },
+              },
+            },
+            animation: {
+              dimlight: "dimlight 5s infinite",
+            },
+          },
+        },
+        plugins: [
+          function ({ addUtilities }) {
+            addUtilities({
+              ".box-reflect": {
+                "-webkit-box-reflect":
+                  "below 1px linear-gradient(transparent, #0004)",
+              },
+            });
+          },
+        ],
+      };
+    </script>
+  </body>
+</html>
